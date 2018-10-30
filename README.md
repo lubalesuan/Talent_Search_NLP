@@ -1,4 +1,4 @@
-# Talent_Search_NLP
+# Talent Search NLP
 Basic Talent Search engine: 
 Turns search query into searchable keywords
 Ranks some text strings on keywords
