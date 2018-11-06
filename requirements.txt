@@ -1,0 +1,2 @@
+spacy==2.0.16
+en_core_web_sm==2.0.0

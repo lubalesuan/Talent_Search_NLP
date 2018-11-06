@@ -1,5 +1,6 @@
 import sys
 from query import process
+from prodigy import train
 
 def main(argv):
 	string = argv[1]

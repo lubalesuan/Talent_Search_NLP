@@ -12,8 +12,10 @@ def get_ents(string):
 	dispatch pr
 	"""
 
-	doc = nlp(unicode(string))
-	for ent in doc.ents:
-		print(ent.text, ent.label_)
-
-	print([(token.text, token.tag_) for token in doc])
+	doc = nlp(str(string))
+	for chunk in doc.noun_chunks:
+ 	   print(chunk.text, chunk.label_, chunk.root.text)
+    
+	for token in doc:
+		print("{0}/{1} <--{2}-- {3}/{4}".format(
+    		token.text, token.tag_, token.dep_, token.head.text, token.head.tag_))
